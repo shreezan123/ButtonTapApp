@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TapMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="retrobg" translatesAutoresizingMaskIntoConstraints="NO" id="dIy-7g-dzQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tapper" translatesAutoresizingMaskIntoConstraints="NO" id="N9e-AK-bCT" userLabel="UILogo">
+                                <rect key="frame" x="125" y="28" width="350" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="O9p-fX-FIi"/>
+                                    <constraint firstAttribute="width" constant="350" id="odz-xA-d8j"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of taps before exit" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ss7-bS-j4u" userLabel="UITextTimes">
+                                <rect key="frame" x="200" y="329" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4b2-p7-kqg"/>
+                                    <constraint firstAttribute="height" constant="30" id="OAI-5d-eHH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="11"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa6-IE-ffm" userLabel="PlayButton">
+                                <rect key="frame" x="200" y="431" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8wV-oy-hyt"/>
+                                    <constraint firstAttribute="width" constant="200" id="maO-x6-2vU"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="playbtn"/>
+                                <connections>
+                                    <action selector="clickplaybutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Cy-q1-w12"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meL-YZ-HoZ" userLabel="CoingamepalyButton">
+                                <rect key="frame" x="193.5" y="28" width="213" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="233" id="TCo-Uy-hjR"/>
+                                    <constraint firstAttribute="width" constant="213" id="xJE-VG-548"/>
+                                </constraints>
+                                <state key="normal" image="coin"/>
+                                <connections>
+                                    <action selector="clickcoinbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucb-hs-UTn"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnx-zk-X1M" userLabel="CounterLabel">
+                                <rect key="frame" x="200" y="308" width="200" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2sZ-QQ-Y9W"/>
+                                    <constraint firstAttribute="height" constant="46" id="zqV-jg-zzq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="meL-YZ-HoZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3sG-02-FeO"/>
+                            <constraint firstItem="Sa6-IE-ffm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GPK-WN-jSH"/>
+                            <constraint firstItem="qnx-zk-X1M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ILG-88-uC6"/>
+                            <constraint firstItem="dIy-7g-dzQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lc9-C9-vHA"/>
+                            <constraint firstItem="qnx-zk-X1M" firstAttribute="top" secondItem="meL-YZ-HoZ" secondAttribute="bottom" constant="47" id="YKk-iD-rsL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sa6-IE-ffm" secondAttribute="bottom" constant="69" id="ePh-Og-Uyl"/>
+                            <constraint firstAttribute="trailing" secondItem="dIy-7g-dzQ" secondAttribute="trailing" id="fmx-zo-jvd"/>
+                            <constraint firstItem="N9e-AK-bCT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h3U-eD-Mzl"/>
+                            <constraint firstItem="Sa6-IE-ffm" firstAttribute="top" secondItem="ss7-bS-j4u" secondAttribute="bottom" constant="72" id="kcQ-Rv-fYJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dIy-7g-dzQ" secondAttribute="bottom" id="kjw-Lm-M7W"/>
+                            <constraint firstItem="ss7-bS-j4u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mdx-Kc-bze"/>
+                            <constraint firstItem="meL-YZ-HoZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ngW-hl-GpD"/>
+                            <constraint firstItem="dIy-7g-dzQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o6y-HR-H2I"/>
+                            <constraint firstItem="N9e-AK-bCT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xDo-aG-kEs"/>
+                        </constraints>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="dIy-7g-dzQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="dIy-7g-dzQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="coingameplay" destination="meL-YZ-HoZ" id="Ure-Pl-lee"/>
+                        <outlet property="counterlabel" destination="qnx-zk-X1M" id="bKi-Du-2Fm"/>
+                        <outlet property="playbutton" destination="Sa6-IE-ffm" id="GUO-FI-QqT"/>
+                        <outlet property="uilogo" destination="N9e-AK-bCT" id="wWR-AY-th6"/>
+                        <outlet property="uitexttimes" destination="ss7-bS-j4u" id="knP-nn-eYC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544" y="224"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tapper" width="497" height="107"/>
+        <image name="coin" width="244" height="268"/>
+        <image name="playbtn" width="356" height="175"/>
+        <image name="retrobg" width="800" height="800"/>
+    </resources>
+</document>

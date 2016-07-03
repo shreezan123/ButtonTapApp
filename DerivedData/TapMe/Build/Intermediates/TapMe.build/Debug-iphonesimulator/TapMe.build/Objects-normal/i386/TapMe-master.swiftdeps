@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "a19418d388b601c437edcc705d4a4507"
+build_time: [520835236, 885512000]
+inputs:
+  "/Users/shrijanaryal/Documents/Ios development/TapMe/TapMe/ViewController.swift": [520835236, 0]
+  "/Users/shrijanaryal/Documents/Ios development/TapMe/TapMe/AppDelegate.swift": [520656408, 0]
